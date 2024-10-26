@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://th.bing.com/th/id/OIP.STmTzXzoHInhuDJicKXdfwHaHa?rs=1&pid=ImgDetMain"><img src="" alt="Image 1"><br><br>
+        <img src="https://th.bing.com/th/id/OIP.VZqujewH04MbGy6cb90IrQHaHk?w=840&h=859&rs=1&pid=ImgDetMain"><img src="" alt="Image 2"><br><br>
+        <img src="https://th.bing.com/th/id/OIP.DsNQV2CN35Fm8zS7aFQw_AHaFO?rs=1&pid=ImgDetMain"><img src="" alt="Image 3"><br><br>
+        <img src="https://i.pinimg.com/236x/5b/1a/36/5b1a36bded3776ff3873264e6d88d56d.jpg"1&pid=ImgDetMain"><img src="" alt="Image 4"><br><br>
+        <img src="https://th.bing.com/th/id/OIP.huy-up83ah8AdFpNeMyhBgHaHV?rs=1&pid=ImgDetMain"><img src="" alt="Image 5"><br><br>
+        <img src="https://image.pngaaa.com/349/3236349-middle.png"><img src="center" alt="Image 6"><br><br>
+        <img src="https://i.pinimg.com/originals/a0/4f/62/a04f62c9a50e3320f5b76e7c65b75e2c.jpg"><img src="" alt="Image 7"><br><br>
+        <img src="https://i.pinimg.com/736x/40/8e/02/408e029da6132376d6790c3b031ffbf8.jpg"><img src="" alt="Image 8">
+    </div>
+</body>
+</html>

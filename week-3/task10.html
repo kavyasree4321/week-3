@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout Example</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightpink; 
+}
+
+.card-container {
+    display: flex; 
+    justify-content: space-around; 
+    padding: 20px;
+}
+
+.card {
+    background-color: white; 
+    border: 1px solid lightcyan; 
+    border-radius: 8px; 
+    width: 200px; 
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+} 
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card h2 {
+    margin-top: 0; 
+}
+
+.card button {
+    padding: 10px;
+    background-color: rgb(75, 69, 69); 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.card button:hover {
+    background-color: burlywood;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>This description  is related to Card 1.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>This description  is related to Card 2.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>This  description is related to Card 3.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+</body>
+</html>

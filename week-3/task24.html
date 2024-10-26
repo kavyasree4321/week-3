@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiggling Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background-color: white;
+            margin: 0;
+        }
+
+        .wiggle-button {
+            padding: 15px 25px;
+            background-color: purple; 
+            color: white; 
+            border: none; 
+            border-radius: 5px;
+            cursor: pointer; 
+            font-size: 20px; 
+            transition: transform 0.2s; 
+        }
+
+        .wiggle-button:hover {
+            animation: wiggle 0.5s ease;
+        }
+
+        @keyframes wiggle {
+            0% {
+                transform: rotate(0deg);
+            }
+            15% {
+                transform: rotate(10deg); 
+            }
+            30% {
+                transform: rotate(-10deg);
+            }
+            45% {
+                transform: rotate(5deg); 
+            }
+            60% {
+                transform: rotate(-5deg);
+            }
+            100% {
+                transform: rotate(0deg); 
+            }
+        }
+    </style>
+</head>
+<body>
+
+<button class="wiggle-button">Wiggle Me!</button>
+
+</body>
+</html>

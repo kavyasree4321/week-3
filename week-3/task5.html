@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip Example</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    .tooltip-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .tooltip-button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+    .tooltip {
+        display: none;
+        position: absolute;
+        bottom: 100%; 
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: grey;
+        color: lightblue;
+        padding: 8px;
+        border-radius: 4px;
+        white-space: nowrap;
+        z-index: 10;
+    }
+    
+    .tooltip-container:hover .tooltip {
+        display: block; 
+    }
+</style>
+</head>
+<body>
+    <div class="tooltip-container">
+        <button class="tooltip-button">Hover me!</button>
+        <div class="tooltip">This is a tooltip message!</div>
+    </div>
+</body>
+</html>

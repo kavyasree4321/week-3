@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blog Page</title>
+    <style>
+       body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Blog Title</header>
+        <nav class="nav">Navigation</nav>
+        <main class="main">Main Content</main>
+        <aside class="aside">Sidebar</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
